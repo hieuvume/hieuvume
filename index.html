@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vu Trung Hieu | Full-stack Developer</title>
+    <meta name="description" content="Vu Trung Hieu - Full-stack Developer & Game Server Architect based in Ha Noi">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <span class="loader-name">HIEU.</span>
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">HIEU<span class="accent-dot">.</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#journey">Journey</a>
+                <a href="#connect" class="nav-cta">Let's Connect</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#journey">Journey</a>
+            <a href="#connect">Connect</a>
+            <div class="mobile-socials">
+                <a href="https://www.facebook.com/CallMeHieuVu/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-btn social-fb"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/hieuvu.me" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn social-ig"><i class="fab fa-instagram"></i></a>
+                <a href="https://locket.camera/links/Kfu1WeR747z1uxTL7" target="_blank" rel="noopener noreferrer" aria-label="Locket" class="social-btn social-locket"><i class="fas fa-heart"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-blob"></div>
+            <div class="hero-blob-2"></div>
+            <div class="hero-star star-1">&#10038;</div>
+            <div class="hero-star star-2">&#10038;</div>
+            <div class="hero-star star-3">+</div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting reveal" data-delay="0">Hey there, I'm</p>
+                <h1 class="hero-name reveal" data-delay="100">
+                    VU TRUNG<br>
+                    <span class="gradient-text">HIEU</span>
+                </h1>
+                <p class="hero-title reveal" data-delay="200">Full-stack Developer &amp; Game Server Architect</p>
+                <div class="hero-socials reveal" data-delay="300">
+                    <a href="https://www.facebook.com/CallMeHieuVu/" target="_blank" rel="noopener noreferrer" class="social-btn social-fb" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/hieuvu.me" target="_blank" rel="noopener noreferrer" class="social-btn social-ig" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://locket.camera/links/Kfu1WeR747z1uxTL7" target="_blank" rel="noopener noreferrer" class="social-btn social-locket" title="Locket">
+                        <i class="fas fa-heart"></i>
+                        <span>Locket</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image reveal" data-delay="200">
+                <div class="hero-photo-frame">
+                    <!-- Replace 'photos/hero.jpg' with your main personal photo -->
+                    <div class="hero-photo" style="background-image: url('photos/hero.jpg')"></div>
+                </div>
+                <div class="hero-photo-decor"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ============ PHOTO GALLERY STRIP ============ -->
+    <section class="gallery" aria-label="Photo gallery">
+        <div class="gallery-track">
+            <!-- Replace each url('photos/gallery-N.jpg') with your personal photos -->
+            <div class="gallery-item gi-1" style="background-image: url('photos/gallery-1.jpg')"></div>
+            <div class="gallery-item gi-2" style="background-image: url('photos/gallery-2.jpg')"></div>
+            <div class="gallery-item gi-3" style="background-image: url('photos/gallery-3.jpg')"></div>
+            <div class="gallery-item gi-4" style="background-image: url('photos/gallery-4.jpg')"></div>
+            <div class="gallery-item gi-5" style="background-image: url('photos/gallery-5.jpg')"></div>
+            <div class="gallery-item gi-6" style="background-image: url('photos/gallery-6.jpg')"></div>
+            <div class="gallery-item gi-7" style="background-image: url('photos/gallery-7.jpg')"></div>
+            <div class="gallery-item gi-8" style="background-image: url('photos/gallery-8.jpg')"></div>
+            <!-- Duplicated for infinite scroll effect -->
+            <div class="gallery-item gi-1" style="background-image: url('photos/gallery-1.jpg')"></div>
+            <div class="gallery-item gi-2" style="background-image: url('photos/gallery-2.jpg')"></div>
+            <div class="gallery-item gi-3" style="background-image: url('photos/gallery-3.jpg')"></div>
+            <div class="gallery-item gi-4" style="background-image: url('photos/gallery-4.jpg')"></div>
+            <div class="gallery-item gi-5" style="background-image: url('photos/gallery-5.jpg')"></div>
+            <div class="gallery-item gi-6" style="background-image: url('photos/gallery-6.jpg')"></div>
+            <div class="gallery-item gi-7" style="background-image: url('photos/gallery-7.jpg')"></div>
+            <div class="gallery-item gi-8" style="background-image: url('photos/gallery-8.jpg')"></div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">ABOUT ME</span>
+                <h2>Crafting Digital<br>Experiences</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-bio reveal" data-delay="100">
+                    <p>Full-stack Software Engineer with <strong>4+ years</strong> of experience in web development and <strong>3+ years</strong> building high-performance Java game servers.</p>
+                    <p>I'm passionate about creating impactful digital products &mdash; from game servers handling thousands of concurrent users to beautiful web applications and Chrome extensions.</p>
+                    <p>Based in <strong>Ha Noi</strong>, Vietnam.</p>
+                </div>
+                <div class="about-photo reveal" data-delay="200" style="background-image: url('photos/about.jpg')">
+                    <!-- Replace 'photos/about.jpg' with your photo -->
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card reveal" data-delay="150">
+                        <span class="stat-number" data-target="4">4+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card reveal" data-delay="200">
+                        <span class="stat-number" data-target="12000">12K+</span>
+                        <span class="stat-label">Concurrent Users</span>
+                    </div>
+                    <div class="stat-card reveal" data-delay="250">
+                        <span class="stat-number" data-target="15000">15K+</span>
+                        <span class="stat-label">Community Members</span>
+                    </div>
+                    <div class="stat-card reveal" data-delay="300">
+                        <span class="stat-number" data-target="2000">2K+</span>
+                        <span class="stat-label">Chrome Users</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS SECTION ============ -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">PROJECTS</span>
+                <h2>What I've<br>Built</h2>
+            </div>
+            <div class="projects-grid">
+
+                <!-- Project 1: Private game -->
+                <article class="project-card reveal" data-delay="0">
+                    <div class="project-image" style="background-image: url('photos/project-MMORPG.jpg')">
+                        <span class="project-badge">2022 &mdash; Present</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>MMORPG Private Server</h3>
+                        <p class="project-role">Full Stack Engineer &bull; Self-Employed</p>
+                        <p class="project-desc">Architected and operated a high-performance multiplayer game server serving 12,000+ concurrent players. Built full-stack web ecosystem with admin dashboard, public portal, and a thriving community of 15,000+ members.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>Netty</span>
+                            <span>Laravel</span>
+                            <span>ReactJS</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: NAEM Exam -->
+                <article class="project-card reveal" data-delay="100">
+                    <div class="project-image" style="background-image: url('photos/project-NAEM.jpg')">
+                        <span class="project-badge">1/2025 &mdash; 5/2025</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>NAEM Exam System</h3>
+                        <p class="project-role">Solo Full-Stack Developer &amp; PM</p>
+                        <p class="project-desc">Comprehensive online examination system with secure testing, exam creation, management, and result analytics. Displayed at a Top 5 graduating project for defense.</p>
+                        <div class="project-tech">
+                            <span>ReactJS</span>
+                            <span>NodeJS</span>
+                            <span>Antd</span>
+                            <span>MaterialUI</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: FAP Beautifier -->
+                <article class="project-card reveal" data-delay="200">
+                    <div class="project-image" style="background-image: url('photos/project-FAP.jpg')">
+                        <span class="project-badge">2024 &mdash; Present</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>FAP Beautifier Extension</h3>
+                        <p class="project-role">Solo Developer &amp; Architect</p>
+                        <p class="project-desc">Non-profit Chrome extension that enhances the user experience with 2,000+ active users on the Chrome Web Store.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Ant Design</span>
+                            <span>CSS Modules</span>
+                            <span>Chrome API</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ JOURNEY SECTION ============ -->
+    <section class="journey" id="journey">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">JOURNEY</span>
+                <h2>Education &amp;<br>Achievements</h2>
+            </div>
+            <div class="journey-grid">
+
+                <!-- Education -->
+                <div class="journey-col reveal" data-delay="0">
+                    <h3 class="journey-subtitle"><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="edu-card">
+                        <div class="edu-photo" style="background-image: url('photos/fpt.jpg')">
+                            <!-- Replace with a photo from your university -->
+                        </div>
+                        <div class="edu-info">
+                            <h4>FPT University</h4>
+                            <p class="edu-major">Software Engineering</p>
+                            <div class="edu-meta">
+                                <span><i class="fas fa-chart-line"></i> GPA: 7.5</span>
+                                <span><i class="fas fa-calendar"></i> 2020 &mdash; 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edu-card" style="margin-top: 20px;">
+                        <div class="edu-photo" style="background-image: url('photos/sejong.jpg')">
+                            <!-- Replace with a photo from Sejong University -->
+                        </div>
+                        <div class="edu-info">
+                            <h4>Sejong University</h4>
+                            <p class="edu-major">Language Program</p>
+                            <div class="edu-meta">
+                                <span><i class="fas fa-calendar"></i> 2026 &mdash; Present</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activities & Awards -->
+                <div class="journey-col reveal" data-delay="150">
+                    <h3 class="journey-subtitle"><i class="fas fa-bolt"></i> Activities</h3>
+                    <ul class="activity-list">
+                        <li>
+                            <div class="activity-icon"><i class="fas fa-compass"></i></div>
+                            <div>
+                                <strong>Core Team Member &mdash; Son Tay</strong>
+                                <p>Lead vocalist in cultural events, showcasing Vietnamese traditional and contemporary music</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="activity-icon"><i class="fas fa-microphone"></i></div>
+                            <div>
+                                <strong>Contestant &mdash; FPTU Talent Show</strong>
+                                <p>Achieved the Audience Choice Award in the singing category through a popular vote</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="activity-icon"><i class="fas fa-music"></i></div>
+                            <div>
+                                <strong>Performer &mdash; HOLA Vibes Music Show 3 &amp; 4</strong>
+                                <p>Performed in a large-scale university music concert, contributing to campus cultural life and entertainment</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h3 class="journey-subtitle" style="margin-top: 2rem;"><i class="fas fa-trophy"></i> Awards</h3>
+                    <ul class="award-list">
+                        <li>
+                            <div class="award-badge"><i class="fas fa-certificate"></i></div>
+                            <div>
+                                <strong>Certificate of Participation &mdash; CoreTeam Son Tay</strong>
+                                <p>2021</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="award-badge"><i class="fas fa-medal"></i></div>
+                            <div>
+                                <strong>Audience Choice Award &mdash; FPTU Talent Show 7</strong>
+                                <p>2021</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="award-badge"><i class="fas fa-award"></i></div>
+                            <div>
+                                <strong>DENSO Vietnam Scholarship</strong>
+                                <p>2025</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONNECT SECTION ============ -->
+    <section class="connect" id="connect">
+        <div class="connect-bg">
+            <div class="connect-blob"></div>
+            <div class="connect-blob-2"></div>
+        </div>
+        <div class="container">
+            <div class="section-header connect-header reveal">
+                <span class="section-tag">CONNECT</span>
+                <h2>Let's Be<br>Friends!</h2>
+                <p class="connect-subtitle">Find me on your favorite platform</p>
+            </div>
+
+            <div class="connect-socials">
+                <a href="https://www.facebook.com/CallMeHieuVu/" target="_blank" rel="noopener noreferrer" class="connect-btn connect-fb reveal" data-delay="0">
+                    <div class="connect-btn-icon"><i class="fab fa-facebook-f"></i></div>
+                    <div class="connect-btn-text">
+                        <span class="connect-btn-label">Facebook</span>
+                        <span class="connect-btn-handle">@CallMeHieuVu</span>
+                    </div>
+                    <i class="fas fa-arrow-right connect-btn-arrow"></i>
+                </a>
+                <a href="https://www.instagram.com/hieuvu.me" target="_blank" rel="noopener noreferrer" class="connect-btn connect-ig reveal" data-delay="100">
+                    <div class="connect-btn-icon"><i class="fab fa-instagram"></i></div>
+                    <div class="connect-btn-text">
+                        <span class="connect-btn-label">Instagram</span>
+                        <span class="connect-btn-handle">@hieuvu.me</span>
+                    </div>
+                    <i class="fas fa-arrow-right connect-btn-arrow"></i>
+                </a>
+                <a href="https://locket.camera/links/Kfu1WeR747z1uxTL7" target="_blank" rel="noopener noreferrer" class="connect-btn connect-locket reveal" data-delay="200">
+                    <div class="connect-btn-icon"><i class="fas fa-heart"></i></div>
+                    <div class="connect-btn-text">
+                        <span class="connect-btn-label">Locket</span>
+                        <span class="connect-btn-handle">Add me on Locket</span>
+                    </div>
+                    <i class="fas fa-arrow-right connect-btn-arrow"></i>
+                </a>
+            </div>
+
+            <div class="connect-contact reveal" data-delay="300">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>(84) 899 622 850</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>(82) 8089 7078</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-location-dot"></i>
+                    <span>Ha Noi, Vietnam</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <span class="footer-logo">HIEU<span class="accent-dot">.</span></span>
+            <p>&copy; 2026 Vu Trung Hieu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
