@@ -157,6 +157,45 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    // ---- Kakao QR Modal ----
+    const kakaoModal = document.getElementById('kakaoModal');
+
+    if (kakaoModal) {
+        const openKakao = () => {
+            kakaoModal.hidden = false;
+            requestAnimationFrame(() => kakaoModal.classList.add('active'));
+            document.body.classList.add('kakao-modal-open');
+        };
+
+        const closeKakao = () => {
+            kakaoModal.classList.remove('active');
+            document.body.classList.remove('kakao-modal-open');
+            setTimeout(() => { kakaoModal.hidden = true; }, 250);
+        };
+
+        document.querySelectorAll('[data-kakao-open]').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                // Also close mobile menu if open
+                if (mobileMenu.classList.contains('active')) {
+                    navToggle.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+                openKakao();
+            });
+        });
+
+        kakaoModal.querySelectorAll('[data-kakao-close]').forEach(el => {
+            el.addEventListener('click', closeKakao);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !kakaoModal.hidden) closeKakao();
+        });
+    }
+
+
     // ---- Active nav link on scroll ----
     const sections = document.querySelectorAll('section[id]');
 

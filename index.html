@@ -56,6 +56,7 @@
                 <a href="https://www.facebook.com/CallMeHieuVu/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-btn social-fb"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/hieuvu.me" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn social-ig"><i class="fab fa-instagram"></i></a>
                 <a href="https://locket.camera/links/Kfu1WeR747z1uxTL7" target="_blank" rel="noopener noreferrer" aria-label="Locket" class="social-btn social-locket"><i class="fas fa-heart"></i></a>
+                <button type="button" aria-label="Kakao Talk" class="social-btn social-kakao" data-kakao-open><i class="fas fa-comment"></i></button>
             </div>
         </div>
     </div>
@@ -90,6 +91,10 @@
                         <i class="fas fa-heart"></i>
                         <span>Locket</span>
                     </a>
+                    <button type="button" class="social-btn social-kakao" title="Kakao Talk" data-kakao-open>
+                        <i class="fas fa-comment"></i>
+                        <span>Kakao</span>
+                    </button>
                 </div>
             </div>
             <div class="hero-image reveal" data-delay="200">
@@ -371,6 +376,14 @@
                     </div>
                     <i class="fas fa-arrow-right connect-btn-arrow"></i>
                 </a>
+                <button type="button" class="connect-btn connect-kakao reveal" data-delay="300" data-kakao-open>
+                    <div class="connect-btn-icon"><i class="fas fa-comment"></i></div>
+                    <div class="connect-btn-text">
+                        <span class="connect-btn-label">Kakao Talk</span>
+                        <span class="connect-btn-handle">Ryan. Vu (휴)</span>
+                    </div>
+                    <i class="fas fa-arrow-right connect-btn-arrow"></i>
+                </button>
             </div>
 
             <div class="connect-contact reveal" data-delay="300">
@@ -397,6 +410,25 @@
             <p>&copy; 2026 Vu Trung Hieu. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- ============ KAKAO QR MODAL ============ -->
+    <div class="kakao-modal" id="kakaoModal" role="dialog" aria-modal="true" aria-labelledby="kakaoModalTitle" hidden>
+        <div class="kakao-modal-backdrop" data-kakao-close></div>
+        <div class="kakao-modal-card">
+            <button type="button" class="kakao-modal-close" aria-label="Close" data-kakao-close>
+                <i class="fas fa-times"></i>
+            </button>
+            <h3 id="kakaoModalTitle" class="kakao-modal-title">Ryan. Vu <span>(휴)</span></h3>
+            <p class="kakao-modal-sub">Scan the QR code to add me on KakaoTalk</p>
+            <div class="kakao-modal-qr">
+                <img src="photos/kakao-qr.png" alt="KakaoTalk QR code for Ryan. Vu (휴)" loading="lazy">
+            </div>
+            <a href="http://qr.kakao.com/talk/IAjvcYbSTvTdwQ1TN31TG5r4mWQ-" target="_blank" rel="noopener noreferrer" class="kakao-modal-link">
+                <i class="fas fa-external-link-alt"></i>
+                Open in KakaoTalk
+            </a>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
