@@ -1174,6 +1174,14 @@ h1, h2, h3, h4 {
     color: var(--accent-light);
 }
 
+.contact-link:hover {
+    color: #fff;
+}
+
+.contact-link:hover i {
+    color: var(--accent);
+}
+
 
 /* =============================================
    FOOTER
